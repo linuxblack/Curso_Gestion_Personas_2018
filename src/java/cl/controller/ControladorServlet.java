@@ -6,7 +6,6 @@
 package cl.controller;
 
 import cl.beans.PersonaBeanLocal;
-import cl.model.IUtilidad;
 import cl.model.Persona;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -25,9 +24,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "ControladorServlet", urlPatterns = {"/control.do"})
 public class ControladorServlet extends HttpServlet {
-
-    @Inject
-    private IUtilidad utilidad;
     
     @EJB
     private PersonaBeanLocal service;
